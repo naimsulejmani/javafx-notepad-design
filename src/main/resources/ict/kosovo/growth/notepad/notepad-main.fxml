@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ict.kosovo.growth.notepad.NotepadMainController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <MenuBar>
+            <Menu text="File" style="-fx-background-color: whitesmoke">
+                <items>
+                    <MenuItem text="New"/>
+                    <MenuItem text="Open"/>
+                    <MenuItem text="Save"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit"/>
+                </items>
+            </Menu>
+
+            <Menu text="Edit">
+                <items>
+                    <MenuItem text="Cut"/>
+                    <MenuItem text="Copy"/>
+                    <MenuItem text="Paste"/>
+                    <MenuItem text="Delete"/>
+                </items>
+
+            </Menu>
+            <Menu text="Format">
+
+            </Menu>
+            <Menu text="View">
+
+            </Menu>
+            <Menu text="Help">
+
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TextArea fx:id="txtNotepad"/>
+    </center>
+
+    <bottom>
+            <GridPane gridLinesVisible="true">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="40"/>
+                    <ColumnConstraints percentWidth="30"/>
+                    <ColumnConstraints percentWidth="10"/>
+                    <ColumnConstraints percentWidth="10"/>
+                    <ColumnConstraints percentWidth="10"/>
+                </columnConstraints>
+                <rowConstraints>
+
+                </rowConstraints>
+                <Label text="            "/>
+                <Label text="Ln 1, Col 1" GridPane.rowIndex="0"  GridPane.columnIndex="1"/>
+                <Label text="100%" GridPane.rowIndex="0"  GridPane.columnIndex="2"/>
+                <Label text="CLRF" GridPane.rowIndex="0"  GridPane.columnIndex="3"/>
+                <Label text="UTF-8" GridPane.rowIndex="0"  GridPane.columnIndex="4"/>
+            </GridPane>
+    </bottom>
+
+
+</BorderPane>
